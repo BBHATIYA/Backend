@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 // const request = require("request");
+const axios = require("axios");
 const https = require("https");
 
 const app = express();
@@ -36,7 +37,15 @@ app.post("/", function (req, res) {
 
   const url = "https://us18.api.mailchip.com/3.0/lists/3973d130fc";
 
-  https.request(ur, options, function (response) {});
+  const options = {
+    method: "POST",
+    auth: "bhavesh:bc62d500ae4fce0c3c8fa3dfd0ab0f55 - us18",
+  };
+
+  //   const request = await axios.request(ur, options, function (response) {
+  //     response.on("data", function(data){
+  //         console.log(JSON.parse(data));
+  //     })
 });
 
 app.listen(3002, function () {
