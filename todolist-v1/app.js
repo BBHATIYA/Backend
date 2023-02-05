@@ -6,8 +6,8 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", function (req, res) {
-    let today = new Date();
-    let currentDay = today.getDay();
+  let today = new Date();
+  let currentDay = today.getDay();
 
   if (currentDay === 6 || currentDay === 0) {
     res.send("Yey it's weekend");
