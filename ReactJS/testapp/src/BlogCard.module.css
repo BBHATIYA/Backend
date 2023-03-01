@@ -1,12 +1,20 @@
 .BlogCard {
   margin: 16px;
   padding: 16px;
+  font-size: 24px;
   box-sizing: border-box;
   border-radius: 5px;
   box-shadow: 0 2px 5px #ccc;
   background-color: lightblue;
 }
+.BlogCard > button {
+  font-size: 24px;
+}
 
+.LikeCount {
+  font-size: 28px;
+  font-weight: 600;
+}
 @media (min-width: 992px) {
   .BlogCard {
     width: 45%;
